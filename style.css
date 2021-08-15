@@ -1,0 +1,36 @@
+html,body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #373681;
+    color: #EEEEEE;
+}
+
+.container{
+    max-width: 600px;
+}
+
+input[type="text"],
+input[type="text"]:focus{
+    background: rgba(0, 0, 0, 0.2);
+    outline: none;
+    border-color: #3d3b8d;
+}
+
+.todos{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.todos li{
+    background: #4A47A3;
+}
+
+.todos li i{
+    cursor: pointer;
+}
+
+
+.filtered {
+    display: none !important;
+}

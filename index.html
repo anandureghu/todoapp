@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDo App</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="h1 font-weight-bold text-center m-5">Todo List</h1>
+
+        <form action="" class="search form-group">
+            <input type="text" name="search" placeholder="Search todos" class="form-control p-3 text-light">
+        </form>
+
+        <ul class="list-group todos">
+            <li class="list-group-item py-3 px-4">Todo 1 <i class="far fa-trash-alt delete float-right"></i></li>
+        </ul>
+
+        <p class="h4 font-weight-normal text-center my-4">Add a new Todo...</p>
+        <form action="" class="add form-group">
+            <input type="text" name="add" placeholder="Add New Todo" class="form-control p-3 text-light">
+        </form>
+
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
