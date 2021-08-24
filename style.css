@@ -34,3 +34,16 @@ input[type="text"]:focus{
 .filtered {
     display: none !important;
 }
+
+.btn{
+    background-color: #545994;
+}
+
+.date{
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 13px;
+}
+
+.delete{
+    font-size: 18px;
+}

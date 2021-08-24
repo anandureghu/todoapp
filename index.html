@@ -17,21 +17,58 @@
     <div class="container">
         <h1 class="h1 font-weight-bold text-center m-5">Todo List</h1>
 
+
+        <!-- <p class="h4 font-weight-normal text-center my-4">Add a new Todo...</p> -->
+        <form action="" class="add form-group">
+            <input type="text" name="add" placeholder="Add New Todo" class="form-control p-3 text-light">
+            <button type="submit" class="btn btn-block text-white mt-3">Add a new Todo</button>
+        </form>
+
         <form action="" class="search form-group">
             <input type="text" name="search" placeholder="Search todos" class="form-control p-3 text-light">
         </form>
 
         <ul class="list-group todos">
-            <li class="list-group-item py-3 px-4">Todo 1 <i class="far fa-trash-alt delete float-right"></i></li>
+            <!-- <li class="list-group-item py-3 px-4">
+                    <div>Todo 1</div>
+                    <div class="date">00/00/00<i class="far fa-trash-alt float-right delete text-white"></i></div>
+                
+            </li> -->
         </ul>
 
-        <p class="h4 font-weight-normal text-center my-4">Add a new Todo...</p>
-        <form action="" class="add form-group">
-            <input type="text" name="add" placeholder="Add New Todo" class="form-control p-3 text-light">
-        </form>
+        
 
     </div>
     
-    <script src="app.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyC_-Rhd4ZURs0WLedB8bFbWS7FiJs2QDos",
+    authDomain: "todos-85d31.firebaseapp.com",
+    projectId: "todos-85d31",
+    storageBucket: "todos-85d31.appspot.com",
+    messagingSenderId: "932770398222",
+    appId: "1:932770398222:web:e730caf563f91e500ebc5f",
+    measurementId: "G-J3CB3X5QE1"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  const db = firebase.firestore();
+</script>
+
+<script src="app.js"></script>
+
 </body>
 </html>
